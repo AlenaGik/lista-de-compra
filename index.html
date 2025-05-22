@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="xxxxxxxxxxxxxxxxxx">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Llista de la compra</title>
+  <link rel="stylesheet" href="estyle.css" title="llista de la compra"/>
+</head>
+
+<body>
+  <div class="container">
+ 
+ <h2 class="form_title">Llista de la compra</h2>
+	
+    <section id="uno">
+	
+	<table>
+	<tr>
+      <th><label for="prod">Nombre:</label></th>
+      <th><label for="quantitat">Quantitat:</label></th>
+	  <th><label for="precio">PrecioUnitat:</label></th>
+	  </tr>
+	 
+	 <tr>
+	  <td><input class="number" id="prod" name="prod" size="20"></input></td>
+      <td><input class="number" id="quantitat" name="quant" size="10"></input></td>
+	  <td><input class="number" id="precio" name="precio" size="10"></input></td>
+	 </tr>
+	 <tr>
+	 <td><button type="button" onclick="nouProductePrincipi()"id="afegirprimer">Afegir al principi</button></td>
+	 <td><button type="button" onclick="nouProducteFinal()"id="afegirultim">Afegir al final</button></td>
+	 <td><button type="button" onclick="verificar()"id="verificar">Verificar</button></td>
+	 </tr>
+	 </table>
+	 
+    </section>
+	
+	<hr />
+	
+    <section id="dos">
+	
+	<div class="form_llista">
+	
+	<h2 class="form_title">Afegir producte</h2>
+	<h4 id="totalp">Núm - Productes 0</h4>
+	<h4 id="preufinal">Preu Total</h4>
+	<ul id="llista">
+      </ul>
+	 <button type="button" onclick="eliminarPrimer()"id="eliminarprimer">Eliminar el Primer</button>
+	 <button type="button" onclick="eliminarUltim()"id="eliminarultim">Eliminar l'últim</button>
+	 </div>
+    </section>
+    
+    <footer>
+	 <div class="copyright">
+      <address>
+        Elena Gikaeva<br>
+        Institut Sabadell 
+      </address>
+		</div>
+    </footer>
+	
+  </div>
+ 
+  <script src="JS-llistaCompra3.js.js"></script>
+</body>
+
+</html>
