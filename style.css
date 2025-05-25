@@ -1,0 +1,197 @@
+
+
+body {
+display: flex;
+justify-content: center;
+background:black
+}
+
+.container h1{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: #f5f5dc;
+}
+
+.container {
+  background-color:#FF9F00;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+
+padding: 20px;
+text-align: center;
+color: #fff;
+font-size: 1.8em;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+
+}
+.left-panel h2{
+margin-left: 10px;
+}
+
+.left-panel, .right-panel {
+  
+  border-radius: 10px;
+}
+.grid-layout{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+th, td {
+  font-weight: normal;
+  padding: 10px;
+  text-align: left;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+
+.number {
+  width: 90%;
+  height: 2em;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: justify;
+}
+
+.right-panel h4{
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.right-panel button{
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: black;
+  color:white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b1c4c1;
+  color: black;
+}
+
+.footer {
+
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+/* Para pantallas pequeñas (hasta 740px) */
+@media screen and (max-width: 740px) {
+  .container {
+    width: 90%;
+  }
+  
+  .grid-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+  }
+  
+  button {
+    font-size: 1em;
+  }
+}
+
+/* Para pantallas muy pequeñas (hasta 320px) */
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .grid-layout {
+    padding: 10px;
+  }
+
+  input.number {
+    width: 100%;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+}
+/* Para iPads en modo vertical (768px) */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 85%;
+  }
+
+  .grid-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+  }
+
+  button {
+    font-size: 1.2em;
+  }
+}
+
+/* Para iPads en modo horizontal (1024px) */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+
+  .grid-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  button {
+    font-size: 1.1em;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  input.number {
+    width: 95%;
+    height: 2.5em;
+  }
+}
+
+
+
