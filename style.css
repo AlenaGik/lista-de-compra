@@ -1,4 +1,5 @@
-
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Tangerine">
 
 body {
 display: flex;
@@ -7,9 +8,9 @@ background:black
 }
 
 .container h1{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-color: #f5f5dc;
-  font-size: 1.5 em;
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
 }
 
 .container {
