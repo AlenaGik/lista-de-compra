@@ -9,6 +9,7 @@ background:black
 .container h1{
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 color: #f5f5dc;
+  font-size: 1.5 em;
 }
 
 .container {
